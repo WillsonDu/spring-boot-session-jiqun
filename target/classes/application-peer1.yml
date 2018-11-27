@@ -1,0 +1,23 @@
+server:
+ port: 1111
+ 
+ 
+eureka:
+ instance:
+  hostname: peer1
+
+ client:
+  registerWithEureka: false
+  fetchRegistry: false
+  serviceUrl: 
+   defaultZone: http://peer2:2222/eureka/,http://peer3:3333/eureka/
+  
+spring:
+ application:
+  name: my-servers
+ redis:
+  host: localhost
+  port: 6379
+  
+dx:
+ name: name1111
